@@ -139,7 +139,7 @@ CUSTOM_KERNEL_HEADSET=accdet
 # Kernel space image sensor driver. Define  project used all image sensors .The value is combination of CUSTOM_KERNEL_MAIN_IMGSENSOR, CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR, CUSTOM_KERNEL_SUB_IMGSENSOR, and CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR
 #CUSTOM_KERNEL_IMGSENSOR=s5k3h7y_mipi_raw s5k8aayx_mipi_yuv
 #CUSTOM_KERNEL_IMGSENSOR=ov8865_mipi_raw ov8825_mipi_raw_2lane gc2235mipi_raw sp2518_yuv
-CUSTOM_KERNEL_IMGSENSOR=ov8865_mipi_raw ov8825_mipi_raw_2lane
+CUSTOM_KERNEL_IMGSENSOR=ov8865_mipi_raw ov8825_mipi_raw_2lane gc2235mipi_raw sp2518_yuv
 
 # key pad driver to report key event
 CUSTOM_KERNEL_KPD=kpd
