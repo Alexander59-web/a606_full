@@ -1,0 +1,1 @@
+/var/ftp/laa/git/a606/a606.mk
