@@ -22,6 +22,7 @@
 #include "ov8825mipiraw_Sensor.h"
 #include "ov8825mipiraw_Camera_Sensor_para.h"
 #include "ov8825mipiraw_CameraCustomized.h"
+
 static DEFINE_SPINLOCK(ov8825mipiraw_drv_lock);
 
 #define OV8825_TEST_PATTERN_CHECKSUM (0x56978d2c)//do rotate will change this value

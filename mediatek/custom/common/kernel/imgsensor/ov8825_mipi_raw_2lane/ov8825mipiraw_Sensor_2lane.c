@@ -19,9 +19,16 @@
 #include "kd_imgsensor_define.h"
 #include "kd_imgsensor_errcode.h"
 
-#include "ov8825mipiraw_Sensor.h"
-#include "ov8825mipiraw_Camera_Sensor_para.h"
-#include "ov8825mipiraw_CameraCustomized.h"
+//ov8825mipiraw_CameraCustomized_2lane.h
+//ov8825mipiraw_Camera_Sensor_para_2lane.h
+//ov8825mipiraw_Sensor_2lane.c
+// ov8825mipiraw_Sensor_2lane.h
+
+
+#include "ov8825mipiraw_Sensor_2lane.h"
+#include "ov8825mipiraw_Camera_Sensor_para_2lane.h"
+#include "ov8825mipiraw_CameraCustomized_2lane.h"
+
 static DEFINE_SPINLOCK(ov8825mipiraw_drv_lock);
 
 #define OV8825_TEST_PATTERN_CHECKSUM (0xa3fe2449)

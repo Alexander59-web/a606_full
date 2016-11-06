@@ -113,6 +113,8 @@
 
 #define HM3451_SENSOR_ID						0x3451
 
+#define OV8865_SENSOR_ID                        0x8865
+
 #define OV2630_SENSOR_ID                        0x2633
 #define OV2640_SENSOR_ID                        0x2642
 #define OV2650_SENSOR_ID                        0x2652

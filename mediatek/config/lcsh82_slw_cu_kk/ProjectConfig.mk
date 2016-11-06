@@ -52,6 +52,7 @@ CUSTOM_HAL_EEPROM=dummy_eeprom
 # User space cameara flashlight driver.You can use this driver to choose cameara flashlight type.
 CUSTOM_HAL_FLASHLIGHT=dummy_flashlight
 
+################ IMAGE SENSORS ##########################
 # User space image sensor driver. Define  project used all image sensors. The value is combination of CUSTOM_HAL_MAIN_IMGSENSOR, CUSTOM_HAL_MAIN_BACKUP_IMGSENSOR, CUSTOM_HAL_SUB_IMGSENSOR, and CUSTOM_HAL_SUB_BACKUP_IMGSENSOR
 CUSTOM_HAL_IMGSENSOR=ov8865_mipi_raw ov8825_mipi_raw_2lane gc2235mipi_raw sp2518_yuv
 
@@ -60,11 +61,18 @@ CUSTOM_HAL_LENS=ov8825af ov8825af dummy_lens
 CUSTOM_HAL_MAIN2_IMGSENSOR=
 CUSTOM_HAL_MAIN_BACKUP_IMGSENSOR=ov8825_mipi_raw_2lane
 
-# lens driver config for main camera (2nd solution)
-CUSTOM_HAL_MAIN_BACKUP_LENS=ov8825af
-
 # User space image sensor  driver: Main camera (rear camera) used sensor related tuning, setting and calibration information.Value is used main sensor name.
 CUSTOM_HAL_MAIN_IMGSENSOR=ov8865_mipi_raw
+
+
+
+
+
+
+
+
+# lens driver config for main camera (2nd solution)
+CUSTOM_HAL_MAIN_BACKUP_LENS=ov8825af
 
 # lens driver config for main camera
 CUSTOM_HAL_MAIN_LENS=ov8825af
@@ -90,7 +98,7 @@ CUSTOM_HAL_SUB_LENS=dummy_lens
 #CUSTOM_KERNEL_ACCELEROMETER=bma050
 CUSTOM_KERNEL_ACCELEROMETER=bma222E
 
-#LAA
+#TROUBLE
 # ALSPS sensor driverto detect ambint light and the object is close or far awary from device
 CUSTOM_KERNEL_ALSPS=cm36283
 #CUSTOM_KERNEL_ALSPS=ltr559
@@ -127,9 +135,11 @@ CUSTOM_KERNEL_GYROSCOPE=
 # detect headset cable plug in and out
 CUSTOM_KERNEL_HEADSET=accdet
 
+#laa
 # Kernel space image sensor driver. Define  project used all image sensors .The value is combination of CUSTOM_KERNEL_MAIN_IMGSENSOR, CUSTOM_KERNEL_MAIN_BACKUP_IMGSENSOR, CUSTOM_KERNEL_SUB_IMGSENSOR, and CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR
-CUSTOM_KERNEL_IMGSENSOR=s5k3h7y_mipi_raw s5k8aayx_mipi_yuv
-#CUSTOM_KERNEL_IMGSENSOR=ov8865_mipi_raw 
+#CUSTOM_KERNEL_IMGSENSOR=s5k3h7y_mipi_raw s5k8aayx_mipi_yuv
+#CUSTOM_KERNEL_IMGSENSOR=ov8865_mipi_raw ov8825_mipi_raw_2lane gc2235mipi_raw sp2518_yuv
+CUSTOM_KERNEL_IMGSENSOR=ov8865_mipi_raw ov8825_mipi_raw_2lane
 
 # key pad driver to report key event
 CUSTOM_KERNEL_KPD=kpd
@@ -172,7 +182,8 @@ CUSTOM_KERNEL_SUB_BACKUP_IMGSENSOR=sp2518_yuv
 CUSTOM_KERNEL_SUB_BACKUP_LENS=
 
 # Kernel space image sensor driver:Sub camera (front camera) used sensor driver.Value is used sub sensor name.
-CUSTOM_KERNEL_SUB_IMGSENSOR=s5k8aayx_mipi_yuv
+#CUSTOM_KERNEL_SUB_IMGSENSOR=s5k8aayx_mipi_yuv
+CUSTOM_KERNEL_SUB_IMGSENSOR=gc2235mipi_raw
 
 # lens driver config for video telephony camera
 CUSTOM_KERNEL_SUB_LENS=dummy_lens

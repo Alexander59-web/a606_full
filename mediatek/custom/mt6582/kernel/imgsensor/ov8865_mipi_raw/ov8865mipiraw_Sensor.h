@@ -123,7 +123,8 @@ typedef struct
 	#define OV8865MIPI_WRITE_ID 	(0x6C)
 	#define OV8865MIPI_READ_ID	(0x6D)
 
-	#define OV8865MIPI_SENSOR_ID            OV8865_SENSOR_ID
+//	#define OV8865MIPI_SENSOR_ID            OV8865_SENSOR_ID  -> laa test
+	#define OV8865_SENSOR_ID            OV8865_SENSOR_ID
 
 
 	UINT32 OV8865MIPIOpen(void);
