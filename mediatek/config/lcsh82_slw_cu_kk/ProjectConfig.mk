@@ -310,7 +310,7 @@ MTK_3GDONGLE_SUPPORT=no
 
 # yes: enable this feature
 # no: disable this feature
-MTK_AAL_SUPPORT=yes
+MTK_AAL_SUPPORT=no
 
 # For ACMT DEUG use
 MTK_ACMT_DEBUG=no
@@ -403,7 +403,7 @@ MTK_BIP_SCWS=yes
 MTK_BQ24156_SUPPORT=no
 
 # BQ24158 charger support
-MTK_BQ24158_SUPPORT=no
+MTK_BQ24158_SUPPORT=yes
 MTK_BQ24160_SUPPORT=no
 MTK_BQ24296_SUPPORT=no
 
@@ -555,7 +555,7 @@ MTK_CHIP_VER=S01
 # Decide whether to support mtk image size  check
 MTK_CHKIMGSIZE_SUPPORT=yes
 MTK_CLEARMOTION_SUPPORT=no
-MTK_CMAS_SUPPORT=no
+MTK_CMAS_SUPPORT=yes
 MTK_CMCC_MOBILEMARKET_SUPPORT=no
 
 # cmmb chip name
@@ -579,7 +579,7 @@ MTK_CPU=arm_cortexa7
 MTK_CSD_DIALER_SUPPORT=no
 
 # CTA case request, Only China Operator & OM project need support. WW project don't need support.
-MTK_CTA_SET=yes
+MTK_CTA_SET=no
 
 # Enable CTA requirements
 MTK_CTA_SUPPORT=no
@@ -724,7 +724,7 @@ MTK_FACTORY_MODE_IN_GB2312=yes
 MTK_FAN5402_SUPPORT=no
 
 # use external charger IC, MTK support
-MTK_FAN5405_SUPPORT=yes
+MTK_FAN5405_SUPPORT=no
 MTK_FASTBOOT_SUPPORT=no
 
 # For NAND phone such as in EMMC phone with internal sd card, FAT on NAND feature was cut from NAND to be a independent fat partition,and create FAT image file over /fat yaffs2 file system, then let NAND phone can support FAT file system in internal.
@@ -733,7 +733,7 @@ MTK_FEMTO_CELL_SUPPORT=no
 MTK_FENCE_SUPPORT=no
 
 # use this feature option to enable/disable File Manager App
-MTK_FILEMANAGER_APP=yes
+MTK_FILEMANAGER_APP=no
 
 # MTK_FLIGHT_MODE_POWER_OFF_MD is used to control if modem is powered off when entering flight mode MTK_TELEPHONY_MODE is used for specify current telephony mode MTK_FIRST_MD is used to specify the high priority modem
 MTK_FIRST_MD=1
@@ -1105,11 +1105,11 @@ MTK_OWNER_SDCARD_ONLY_SUPPORT=no
 MTK_PARTITION_TABLE_PLAIN_TEXT=no
 MTK_PCB_BATTERY_SENSOR=yes
 MTK_PERFSERVICE_SUPPORT=yes
-MTK_PERMISSION_CONTROL=yes
+MTK_PERMISSION_CONTROL=no
 MTK_PERSIST_PARTITION_SUPPORT=no
 
 # This feature option is to define whether we support features for phone number attribution of China (CMCC, CU and CT) MTK_PHONE_NUMBER_GEODESCRIPTION = Yes means that  phone number attribution of China is enabled in current project, vice versa
-MTK_PHONE_NUMBER_GEODESCRIPTION=yes
+MTK_PHONE_NUMBER_GEODESCRIPTION=no
 
 # Enable voice recording function
 MTK_PHONE_VOICE_RECORDING=yes
@@ -1179,7 +1179,7 @@ MTK_RTSP_BITRATE_ADAPTATION_SUPPORT=no
 
 # Support stereo 3D display or not
 MTK_S3D_SUPPORT=no
-MTK_SAFEMEDIA_SUPPORT=no
+MTK_SAFEMEDIA_SUPPORT=yes
 
 # Entry switch of FOTA and SCOMO
 MTK_SCOMO_ENTRY=no
@@ -1236,13 +1236,13 @@ MTK_SENSOR_SUPPORT=yes
 MTK_SGLTE_OP01_LAB_MD_AUTOCLOSE_SUPPORT=no
 
 # sdcard will be a folder of /data
-MTK_SHARED_SDCARD=no
+MTK_SHARED_SDCARD=yes
 
 # this feature is used for notification when Msensor accuracy is not good in the situation that user is using a m-sensor related APK. a toast will be showen when m-sensor accuracy is not good once.
 MTK_SHOW_MSENSOR_TOAST_SUPPORT=yes
 
 # A mechanism for customer to enable their own sign key.
-MTK_SIGNATURE_CUSTOMIZATION=no
+MTK_SIGNATURE_CUSTOMIZATION=yes
 MTK_SIGNMODEM_SUPPORT=yes
 
 # MTK_SIM1_SOCKET_TYPE=1: support type 1 socket type
@@ -1304,7 +1304,7 @@ MTK_SNS_SUPPORT=no
 MTK_SNS_TWITTER_APP=no
 
 # When enable, executing factory reset will preserve the data in /data/app/
-MTK_SPECIAL_FACTORY_RESET=no
+MTK_SPECIAL_FACTORY_RESET=yes
 
 # yes means reporting specific SM cause to framework from RIL
 # no means not report ing specific SM cause to framework from RIL.
@@ -1334,7 +1334,7 @@ MTK_SWIP_WMAPRO=no
 
 # enable/disable BT SW CVSD and merge interface support.
 MTK_SW_BTCVSD=yes
-MTK_SYSTEM_UPDATE_SUPPORT=yes
+MTK_SYSTEM_UPDATE_SUPPORT=no
 
 # use MTK_TABLET_PLATFORM to select MDL file
 MTK_TABLET_PLATFORM=no
@@ -1422,7 +1422,7 @@ MTK_VIDEO_VP9_SUPPORT=yes
 # To enable/disable feature Video Wallpaper on the project. If MTK_VLW_APP = yes MtkVideoLiveWallpaper.apk will be built into bootimage and users can use this feature on their device, vice versa.
 MTK_VLW_APP=yes
 MTK_VOICE_CONTACT_SEARCH_SUPPORT=no
-MTK_VOICE_UI_SUPPORT=yes
+MTK_VOICE_UI_SUPPORT=no
 MTK_VOICE_UNLOCK_SUPPORT=yes
 MTK_VOICE_UNLOCK_USE_TAB_LIB=no
 
@@ -1447,13 +1447,13 @@ MTK_WAPPUSH_SUPPORT=yes
 MTK_WB_SPEECH_SUPPORT=yes
 
 # the switcher of turn on /off weather3d  widget
-MTK_WEATHER3D_WIDGET=yes
+MTK_WEATHER3D_WIDGET=no
 
 # The weather information retrieval engine and provider.
 MTK_WEATHER_PROVIDER_APP=yes
 
 # A widget shows weather information provided by Yahoo!
-MTK_WEATHER_WIDGET_APP=yes
+MTK_WEATHER_WIDGET_APP=no
 MTK_WEB_NOTIFICATION_SUPPORT=yes
 
 # Define MTK weekly number(internal use only)
@@ -1481,7 +1481,7 @@ MTK_WMA_PLAYBACK_SUPPORT=no
 MTK_WML_SUPPORT=yes
 
 # use  to wrap the ASF playback feature, AS 75 do not supporte the ASF Playback, so set no
-MTK_WMV_PLAYBACK_SUPPORT=yes
+MTK_WMV_PLAYBACK_SUPPORT=no
 
 # Standalone feature option for World Clock Widget.
 MTK_WORLD_CLOCK_WIDGET_APP=yes
@@ -1512,7 +1512,8 @@ NXP_SMARTPA_SUPPORT=no
 OP01_CTS_COMPATIBLE=no
 
 # It's used to define which operator you will support. If it's not operator load, the value is NONE(default value). The values may be: OP01_SPEC0200_SEGC(for CMCC), OPO2_SPEC0200_SEGA(for CU)
-OPTR_SPEC_SEG_DEF=OP02_SPEC0200_SEGA
+OPTR_SPEC_SEG_DEF=NONE
+#OPTR_SPEC_SEG_DEF=OP02_SPEC0200_SEGA
 PLATFORM_MTK_SDK_VERSION=2
 
 # AP only chip use external modem, ex: mt8135.
@@ -1562,7 +1563,7 @@ MTK_GEMINI_3G_SWITCH=no
 MTK_MODEM_SUPPORT=
 
 # enable Video telephony
-MTK_VT3G324M_SUPPORT=yes
+MTK_VT3G324M_SUPPORT=no
 
 # Used in FM driver and Native lib makefiles to decide which chip driver will be build
 MTK_FM_CHIP=MT6627_FM
@@ -1613,10 +1614,10 @@ CUSTOM_KERNEL_LCM=nt35590_hd720_dsi_cmd_auo hx8389b_qhd_dsi_vdo_tinama
 CUSTOM_UBOOT_LCM=nt35590_hd720_dsi_cmd_auo
 
 # To set LCM resolution height size
-LCM_HEIGHT=1280
+LCM_HEIGHT=854
 
 # To set LCM resolution width size
-LCM_WIDTH=720
+LCM_WIDTH=480
 
 # To control resource build. The value would be assigned to PRODUCT_LOCALES under build/target/product/XXX.mk (XXX is each project's name)
 MTK_PRODUCT_LOCALES=en_US es_ES zh_CN zh_TW ru_RU pt_BR fr_FR de_DE tr_TR it_IT in_ID ms_MY vi_VN ar_EG  th_TH  pt_PT   nl_NL el_GR hu_HU tl_PH ro_RO cs_CZ iw_IL my_MM km_KH ko_KR
@@ -1631,7 +1632,7 @@ MTK_ATV_CHIP=
 MTK_MATV_ANALOG_SUPPORT=yes
 
 # if it is set to TRUE: Support WAPI (WLAN Authentication and Privacy Infrastructure) if it is set to FALSE: Does not Support WAPI (WLAN Authentication and Privacy Infrastructure)
-MTK_WAPI_SUPPORT=yes
+MTK_WAPI_SUPPORT=no
 
 # To enable Wi-Fi Tethering in the Wi-Fi Setting UI * valid_value_list = Yes or No (Yes: Enable, No: Disable)  * dependency_relationship need MTK_WLAN_SUPPORT = yes
 MTK_WIFI_HOTSPOT_SUPPORT=yes
