@@ -1605,10 +1605,14 @@ CUSTOM_KERNEL_HDMI=
 MTK_HDMI_SUPPORT=no
 
 # to choose which boot logo folder would be used, the boot logo folder path is mediatek/custom/common/uboot/logo/
-BOOT_LOGO=cu_hd720
+BOOT_LOGO = fwvga
+#BOOT_LOGO=cu_hd720
 
 # To choose kernel LCM driver name
-CUSTOM_KERNEL_LCM=nt35590_hd720_dsi_cmd_auo hx8389b_qhd_dsi_vdo_tinama
+CUSTOM_KERNEL_LCM=otm8018b_dsi_vdo
+#otm8018b_dsi_vdo_tm
+#dummy_lcm
+#CUSTOM_KERNEL_LCM=nt35590_hd720_dsi_cmd_auo hx8389b_qhd_dsi_vdo_tinama
 
 # To choose uboot LCM driver name
 CUSTOM_UBOOT_LCM=nt35590_hd720_dsi_cmd_auo
