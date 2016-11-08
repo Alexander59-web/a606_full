@@ -198,8 +198,8 @@ CUSTOM_KERNEL_USB=mt6577
 CUSTOM_KERNEL_VIBRATOR=vibrator
 
 # To choose LK LCM driver name
-CUSTOM_LK_LCM=nt35590_hd720_dsi_cmd_auo hx8389b_qhd_dsi_vdo_tinama
-CUSTOM_LK_LOGO=hd720
+CUSTOM_LK_LCM=otm8018b_dsi_vdo
+CUSTOM_LK_LOGO=fwvga
 
 # A mechanism for customer to enable their own sign key.
 CUSTOM_PRELOADER_CUSTOM=custom
@@ -1615,7 +1615,7 @@ CUSTOM_KERNEL_LCM=otm8018b_dsi_vdo
 #CUSTOM_KERNEL_LCM=nt35590_hd720_dsi_cmd_auo hx8389b_qhd_dsi_vdo_tinama
 
 # To choose uboot LCM driver name
-CUSTOM_UBOOT_LCM=nt35590_hd720_dsi_cmd_auo
+CUSTOM_UBOOT_LCM=otm8018b_dsi_vdo
 
 # To set LCM resolution height size
 LCM_HEIGHT=854
